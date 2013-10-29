@@ -6,7 +6,7 @@ require 'rack'
 
 app = Rack::Builder.new do
   map '/ping' do
-    ping = ->(env) { [200, {'Content-Type' => 'text/plain'}, ['PONG!']] }
+    ping = ->(env) { [200, {'Content-Type' => 'text/plain'}, ["PONG\n"]] }
     run ping
   end
 end
