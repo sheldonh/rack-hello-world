@@ -1,3 +1,3 @@
 source 'http://rubygems.org'
 
-gem 'rack'
+gem 'unicorn', '~> 4.6.3'
